@@ -1,9 +1,15 @@
-struct Request{
-	int src,dest,srtTime,endTime;
-};
-typedef struct Request Request;
-
-struct Car{
-	int revenue,cap,src,dest[5],time;
-};
-typedef struct Car Car;
+typedef struct
+{
+    int start_time;
+    int end_time;
+    int start_loc;
+    int end_loc;
+    int status=0; 
+}request;
+typedef struct 
+{
+  int initial_loc;
+  vector<int> route;
+  int capacity;
+  int revenue;
+}vehicle;
